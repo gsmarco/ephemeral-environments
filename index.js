@@ -2,8 +2,13 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// app.get("/", (req, res) => {
+//   res.send(`<h1>¡Hola desde mi ambiente efímero!</h1>
+//             <p>Hora del servidor: ${new Date().toLocaleString()}</p>`);
+// });
+
 app.get("/", (req, res) => {
-  res.send(`<h1>¡Hola desde mi ambiente efímero!</h1>
+  res.send(`<h1>¡Hola Comprobando el comportamiento efímero al hacer un cambio!</h1>
             <p>Hora del servidor: ${new Date().toLocaleString()}</p>`);
 });
 
